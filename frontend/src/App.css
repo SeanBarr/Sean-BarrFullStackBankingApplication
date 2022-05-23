@@ -1,0 +1,122 @@
+.card-md {
+    max-width: 35rem;
+}
+
+.form-md {
+    max-width: 25rem;
+}
+
+.table-md {
+    width: 32rem;
+}
+
+.fs-7 {
+    font-size: 9rem;
+}
+
+.icon-color {
+    color: rgba(255,255,255,.55);
+    transition: color .15s ease-in-out;
+}
+
+.icon-color:hover, .icon-color:focus {
+    color: rgba(255,255,255,1);
+}
+
+.transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.z-1 {
+    z-index: -1;
+}
+
+#home::after {
+    content: "Go to the homepage"
+}
+
+#deposit::after {
+    content: "Deposit money to your balance"
+}
+
+#withdraw::after {
+    content: "Withdraw money from your balance"
+}
+
+#newaccount::after {
+    content: "Create a new account"
+}
+
+#logout::after {
+    content: "Log out of your account"
+}
+
+#signup::after {
+    content: "Create an account"
+}
+
+#login::after {
+    content: "Log in to your account"
+}
+
+#home::before, 
+#deposit::before, 
+#withdraw::before, 
+#logout::before, 
+#signup::before, 
+#login::before,
+#newaccount::before {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+    width: 0; 
+    height: 0; 
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid rgb(233, 233, 233);
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+#home::after, 
+#deposit::after, 
+#withdraw::after, 
+#logout::after, 
+#signup::after, 
+#login::after,
+#newaccount::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 2.6rem;
+    left: -1rem;
+    width: 9rem;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 233, 233);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+#home:hover::after, 
+#deposit:hover::after, 
+#withdraw:hover::after, 
+#newaccount:hover::after, 
+#logout:hover::after, 
+#signup:hover::after, 
+#login:hover::after,
+#home:hover::before, 
+#deposit:hover::before, 
+#withdraw:hover::before, 
+#newaccount:hover::before, 
+#logout:hover::before, 
+#signup:hover::before, 
+#login:hover::before
+
+{
+    opacity: 1;
+}
